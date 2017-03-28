@@ -33,9 +33,8 @@ public class Ball : MonoBehaviour {
 
     public void ResetBall()
     {
-        v2.y = 0;
-        v2.x = 0;
-        
+
+        transform.position = new Vector2(0, 0);
 
     }
    void RestartGame()
@@ -70,9 +69,8 @@ public class Ball : MonoBehaviour {
 
         if( collision.gameObject.name == "RightWall")
         {
-            
             GameBoard.Score(collision.gameObject.name);
-            RestartGame();
+           RestartGame();
         }
 
         if( collision.gameObject.name == "LeftWall")

@@ -23,10 +23,11 @@ public class GameBoard : MonoBehaviour {
 
     public static void Score (string Wall)
     {
-        Console.WriteLine(Wall);
+        
         if (Wall == "RightWall")
         {
             Player1Score++;
+
         }
         else if (Wall == "LeftWall")
         {
