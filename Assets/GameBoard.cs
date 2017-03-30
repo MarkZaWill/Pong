@@ -41,12 +41,12 @@ public class GameBoard : MonoBehaviour {
         if (Player1Score == 10)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER ONE WINS");
-            BallTransform.gameObject.SendMessage("ResetBall");
+            BallTransform.gameObject.SendMessage("RestartGame");
         }
         else if (Player2Score == 10)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER TWO WINS");
-            BallTransform.gameObject.SendMessage("ResetBall");
+            BallTransform.gameObject.SendMessage("RestartGame");
         }
     }
 }

@@ -9,6 +9,7 @@ public class Ball : MonoBehaviour {
     // set direction game start
     public Vector2 right = new Vector2(20.0f, -15.0f);
     public Vector2 left = new Vector2(-20.0f, -15.0f);
+    public Vector2 end = new Vector2(0f, 0f);
     public Vector2 v2;
 
     void Start()
@@ -30,8 +31,10 @@ public class Ball : MonoBehaviour {
     }
    void RestartGame()
     {
+
         //originally had logic for resetting game board.  Will update with this logic in next update
         ResetBall();
+        GetComponent<Rigidbody2D>().velocity = end;
     }
 
     //sets game logic for what happens when a collision happens with a game object during play
@@ -64,14 +67,14 @@ public class Ball : MonoBehaviour {
         if( collision.gameObject.name == "RightWall")
         {
            GameBoard.Score(collision.gameObject.name);
-           RestartGame();
+           ResetBall();
         }
 
         //logic for initiating player two scoring by hitting left wall
         if( collision.gameObject.name == "LeftWall")
         {
             GameBoard.Score(collision.gameObject.name);
-            RestartGame();
+            ResetBall();
         }
     }
 }
