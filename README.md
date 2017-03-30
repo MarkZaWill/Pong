@@ -1,5 +1,5 @@
 ## Pong
-#Attempting to recreate the classic game, ***Pong***.
+Attempting to recreate the classic game, ***Pong***.#
 
 
 This is my first try to develop a game using **Unity**.  I have commented the code to show my understanding of what I wrote.  I also read a lot of tutorials and the docs for Unity to develop this.  I used *https://noobtuts.com/unity/2d-pong-game* for some reference to understand some of the mechanics of how Unity works and how to tie the scripts I wrote in Visual Studio to everything else I did in Unity.  
