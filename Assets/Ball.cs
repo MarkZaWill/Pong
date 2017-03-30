@@ -4,22 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball : MonoBehaviour {
+    //set initial speed
     public float speed = 30;
-    private Rigidbody2D Rigid;
+    // set direction game start
     public Vector2 right = new Vector2(20.0f, -15.0f);
     public Vector2 left = new Vector2(-20.0f, -15.0f);
     public Vector2 v2;
-//    void BallMove() { 
-//        float random = Random.Range(0.0f, 2.0f);
-//            if(random< 1.0f)
-//            {
-//                Rigid.AddForce(right);
-//            }
-//            else
-//            {
-//                Rigid.AddForce(left);
-//            }
-//}
+
     void Start()
     {
         //this is is initial velocity of the ball
